@@ -1,0 +1,259 @@
+﻿
+
+:root {
+    --lines_gold: #c69626;
+    --titleFont: "Playwrite CU", cursive;
+    --textFont: "Roboto", sans-serif;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: var(--textFont);
+    background-image: url("../assets/img/BG_BLACKPATTERN.jpg");
+    color: whitesmoke;
+    scroll-behavior: smooth;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+.hero {
+    width: 100%;
+    height: 200px;
+    background-image: url('../assets/img/HERO_BG_ITALY.jpg');
+    background-size: contain;
+    background-attachment: fixed;
+    background-position: center bottom;
+    box-shadow: 0px 0px 10px grey;
+}
+
+.hero__content {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2b2b2b8f;
+    backdrop-filter: blur(18px);
+}
+
+.hero__content--txt {
+    margin-right: 2rem;
+    color: whitesmoke;
+}
+
+    .hero__content--txt > h1 {
+        font-size: clamp(2.5rem, 5vw, 7rem);
+        letter-spacing: 1.2px;
+        text-align: center;
+        font-family: var(--titleFont);
+        text-shadow: 0 0 8px whitesmoke;
+    }
+
+    .hero__content--txt > h2 {
+        font-size: clamp(1.2rem, 1.8vw, 2rem);
+        text-align: center;
+    }
+
+
+
+
+.nav__container {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba( 80 80 80 / .4);
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 4px 10px black;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav {
+    width: 100%;
+    min-width: 300px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.nav__list {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    height: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logoStyle {
+    font-size: 1.3rem;
+    font-family: var(--titleFont);
+    margin-right: 2.5rem;
+    text-shadow: 0 0 8px whitesmoke;
+}
+
+.list__item {
+    cursor: pointer;
+    color: whitesmoke;
+    font-size: 1.4rem;
+    border: 1px solid whitesmoke;
+    border-radius: 8px;
+    padding: 8px;
+    transition: all ease-in-out .2s;
+}
+
+    .list__item:hover {
+        background-color: darkred;
+        color: white;
+        text-shadow: 0 0 8px whitesmoke;
+    }
+
+
+
+.menu__section {
+    width: 80%;
+    margin: 0 auto;
+    padding: 70px 10px;
+}
+
+.title {
+    font-size: clamp(1.8rem, 3vw, 4rem);
+    position: relative;
+    padding: 5px 0 0;
+    margin: 0 0 2rem;
+    letter-spacing: 2px;
+}
+
+    .title::after {
+        content: '';
+        width: 100%;
+        height: 2px;
+        background-color: var(--lines_gold);
+        position: absolute;
+        top: 0%;
+        right: 0%;
+    }
+
+.menu__container {
+    width: 80%;
+    margin: 0 auto 2rem;
+}
+
+
+.grid_card {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    grid-template-rows: auto;
+    justify-items: center;
+}
+
+.card {
+    width: 100%;
+    height: 100px;
+    padding: 5px;
+    background-color: blue;
+    backdrop-filter: blur(4px);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all ease-in-out .2s;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    z-index: 100;
+}
+
+    .card:hover > .card__img > img {
+        transform: scale(1.2);
+        filter: drop-shadow(0 0 8px #808080);
+    }
+
+.card__img {
+    width: 40%;
+    margin-right: 1rem;
+    border-radius: 50%;
+}
+
+    .card__img > img {
+        transition: all ease-in-out .25s;
+    }
+
+.card__txt {
+    width: 60%;
+    height: 100%;
+    align-self: flex-end;
+    letter-spacing: 1px;
+}
+
+    .card__txt > h5 {
+        font-weight: 700;
+        font-size: clamp(1.8rem, 2vw, 2rem);
+    }
+
+    .card__txt > p {
+        font-size: 14px;
+    }
+
+.card__price {
+    text-align: right;
+    font-weight: 500;
+}
+
+
+
+
+
+.footer__container {
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    bottom: 0;
+    background-color: #1a1a1a;
+    box-shadow: 0 -5px 8px black;
+}
+
+
+
+
+.formStyles {
+    width: 100%;
+    height: fit-content;
+}
+
+.formPersonalDates {
+    width: 80%;
+    margin: 0 auto;
+    padding: 1rem;
+    display: flex;
+}
