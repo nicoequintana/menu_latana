@@ -158,6 +158,7 @@ a {
         right: 0%;
     }
 
+
 .menu__container {
     width: 80%;
     margin: 0 auto 2rem;
@@ -178,7 +179,6 @@ a {
     width: 100%;
     height: 100px;
     padding: 5px;
-    background-color: blue;
     backdrop-filter: blur(4px);
     border-radius: 5px;
     display: flex;
@@ -212,17 +212,18 @@ a {
 .card__txt {
     width: 60%;
     height: 100%;
+    font-size: 1.2rem;
     align-self: flex-end;
     letter-spacing: 1px;
 }
 
     .card__txt > h5 {
         font-weight: 700;
-        font-size: clamp(1.8rem, 2vw, 2rem);
+        font-size: clamp(1.8rem, 1vw, 2rem);
     }
 
     .card__txt > p {
-        font-size: 14px;
+        font-size: 10px;
     }
 
 .card__price {
